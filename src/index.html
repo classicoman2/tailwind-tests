@@ -11,19 +11,9 @@
   </head>
 
   <body>
-    <main>
-
-
-      <div class="grid grid-cols-4 gap-4">
-        <div>01</div>
-        <!-- ... -->
-        <div>09</div>
-      </div>
-
-
-
-      <div id="missatgesArea"></div>
-      <div id="text-section">
+    <main class="grid grid-cols-main">
+      <div class="flex flex-col" id="missatgesArea"></div>
+      <div class="flex flex-row" id="text-section">
         <img id="buttonGif" src="assets/gif.png" alt="gif button" />
         <input id="text">
         <img id="buttonSend" src="assets/send.png" alt="send button" />
@@ -65,7 +55,7 @@
         </div>
         <div class="fila">
           <div class="tecla operacio" id="coma">,</div>
-          <div class="tecla operacio" id="espai" style="width: 150px"></div>
+          <div class="tecla operacio basis-1" id="espai"></div>
           <div class="tecla operacio" id="punt">.</div>
           <div class="tecla operacio" id="cc">C</div>
           <div class="tecla operacio" id="ce">CE</div>
